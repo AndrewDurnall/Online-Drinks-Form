@@ -1,0 +1,75 @@
+#drinkPrice{
+    padding-top: 10px;
+    display:flex;
+}
+#ingredients{
+    display:flex;
+    flex-direction: column;
+}
+.btns{
+    display: flex;
+}
+h3{
+    margin-bottom: 0;
+}
+.ing{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 19px;
+}
+.sizeOptions{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+.drinkType{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+.drinkBase{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+.extra{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+#saveBtn{
+    margin-right: 10px;
+}
+#addToBtn{
+    margin-right: 5px;
+}
+#smoothieBase{
+    height:70px;
+}
+#milkshakeBase{
+    height:70px;
+}
+#showPrice{
+    height: 25px;
+    font-size: larger;
+    font-weight: bold;
+    margin: 0;
+    padding: 2px 0px 0px 1px;
+}
+#dpr{
+    line-height:25px;
+    margin: 0;
+}
+#sumlabel{
+    font-weight: bold;
+}
+#totlabel{
+    font-weight: bold;
+}
+#tot{
+    font-weight: bold;
+}
+#orderM{
+    font-weight: bold;
+}

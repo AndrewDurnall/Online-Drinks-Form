@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="drink ordering service" content="drink ordering service">
+    <link rel="stylesheet" href="style.css">
+    <title>The Monkey Bar</title>
+
+</head>
+
+<body>
+    <h1>The Monkey Bar</h1>
+    <form id="theForm">
+
+        <div id="x">
+        </div>
+        <h3>Size:</h3>
+        <div class="sizeOptions">
+            <label for="small">Small - £2.45</label>
+            <input type="radio" id="small" name="size" value="Small">
+        </div>
+        <div class="sizeOptions">
+            <label for="medium">Medium - £2.95</label>
+            <input type="radio" id="medium" name="size" value="Medium" checked>
+        </div>
+        <div class="sizeOptions">
+            <label for="large">Large - £3.45</label>
+            <input type="radio" id="large" name="size" value="Large">
+        </div>
+
+        <h3>Drink Type:</h3>
+        <div class="drinkType">
+            <label for="smoothie">Smoothie</label>
+            <input type="radio" id="smoothie" name="drinkType" value="Smoothie">
+        </div>
+        <div class="drinkType">
+            <label for="milkshake">Milkshake</label>
+            <input type="radio" id="milkshake" name="drinkType" value="Milkshake">
+        </div>
+
+        <h3 id="bD">Base Drink:</h3>
+        <div id="smoothieBase">
+            <div class="drinkBase">
+                <label for="apple">Apple juice</label>
+                <input type="radio" id="apple" name="smoothieBase" value="Apple Juice" checked>
+            </div>
+            <div class="drinkBase">
+                <label for="orange">Orange juice</label>
+                <input type="radio" id="orange" name="smoothieBase" value="Orange Juice">
+            </div>
+        </div>
+
+        <div id="milkshakeBase">
+            <div class="drinkBase">
+                <label for="wholeMilk">Whole Milk</label>
+                <input type="radio" id="wholeMilk" name="milkBase" value="Whole Milk">
+            </div>
+            <div class="drinkBase">
+                <label for="semiMilk">Semi-Skimmed Milk</label>
+                <input type="radio" id="semiMilk" name="milkBase" value="Semi Skimmed Milk" checked>
+            </div>
+            <div class="drinkBase">
+                <label for="cocoMilk">Coconut Milk</label>
+                <input type="radio" id="cocoMilk" name="milkBase" value="Coconut Milk">
+            </div>
+            <div class="drinkBase">
+                <label for="oatMilk">Oat Milk</label>
+                <input type="radio" id="oatMilk" name="milkBase" value="Oat Milk">
+            </div>
+        </div>
+
+        <h3 id="ingh3">Ingredients:</h3>
+        <div id="ingredients">
+            <div class="ing">
+                <label for="banana">Banana</label>
+                <input type="checkbox" class="checkBx" name="ingred" value="Banana">
+            </div>
+            <div class="ing">
+                <label for="strawberries">Strawberries</label>
+                <input type="checkbox" class="checkBx" name="ingred" value="Strawberries">
+            </div>
+            <div class="ing">
+                <label for="raspberries">Raspberries</label>
+                <input type="checkbox" class="checkBx" name="ingred" value="Raspberries">
+            </div>
+            <div class="ing">
+                <label for="blueberries">Blueberries</label>
+                <input type="checkbox" class="checkBx" name="ingred" value="Blueberries">
+            </div>
+            <div class="ing">
+                <label for="mango">Mango</label>
+                <input type="checkbox" class="checkBx" name="ingred" value="Mango">
+            </div>
+            <div class="ing">
+                <label for="chocolate">Chocolate</label>
+                <input type="checkbox" class="checkBx" name="ingred" value="Chocolate">
+            </div>
+            <div class="ing">
+                <label for="whiteChocolate">White Chocolate</label>
+                <input type="checkbox" class="checkBx" name="ingred" value="White Chocolate">
+            </div>
+
+        </div>
+
+        <h3 id="xtr">Extras - 50p Each:</h3>
+        <div id="extras">
+
+            <div class="extra">
+                <label for="chocSprinkle">Chocolate Sprinkles</label>
+                <input type="checkbox" id="chocSprinkle" name="extraItems" value="Chocolate Sprinkles">
+            </div>
+            <div class="extra">
+                <label for="mMallow">Marshmallows</label>
+                <input type="checkbox" id="mMallow" name="extraItems" value="Marshmallows">
+            </div>
+            <div class="extra">
+                <label for="cream">Cream</label>
+                <input type="checkbox" id="cream" name="extraItems" value="Cream">
+            </div>
+            <div class="extra">
+                <label for="malt">Malt</label>
+                <input type="checkbox" id="malt" name="extraItems" value="Malt">
+            </div>
+
+        </div>
+
+        <div id="drinkPrice">
+            <h3 id="dpr">Drink Price: £</h3>
+            <p id="showPrice"></p>
+        </div>
+
+        <div class="btns">
+            <p><button type="button" id="addToBtn">Add Drink To Order</button></p>
+            <p><button type="button" id="orderBtn">Place Order</button></p>
+        </div>
+        <div class="btns">
+            <p><button type="button" id="saveBtn">Save Favourite</button></p>
+            <p><button type="button" id="loadBtn">Order Favourite</button></p>
+        </div>
+
+    </form>
+    <p id="sumlabel">Drinks List:</p>
+    <p id="outputTotal"></p>
+    <p id="totlabel">Total:</p>
+    <p id="tot"></p>
+    <p id="orderM">Order Summary:</p>
+    <p id="orderMessage"></p>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
